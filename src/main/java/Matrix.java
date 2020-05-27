@@ -36,7 +36,7 @@ public class Matrix {
 
         }
         long time2 = System.nanoTime();
-        //System.out.println((time2 - time1)/1000/1000);
+        System.out.println("Execution time: " + (time2 - time1)/1000/1000 + " ms");
         sortBetweenRows();
     }
 
