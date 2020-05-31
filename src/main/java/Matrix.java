@@ -22,21 +22,43 @@ public class Matrix implements Iterable<List<Integer>> {
         this.rows = rows;
     }
 
-    public void sort(boolean forked) {
+    public void sort(ProcessingMethod method) {
+        sort(method, SortingAlgorithm.MERGE);
+    }
+
+    public void sort(SortingAlgorithm algorithm) {
+        sort(ProcessingMethod.STREAM, algorithm);
+    }
+
+    public void sort(ProcessingMethod method, SortingAlgorithm algorithm) {
         long time1 = System.nanoTime();
         Iterator<List<Integer>> rowIterator;
         List<Integer> row;
-        if (forked) {
-            ForkJoinPool pool = new ForkJoinPool(8);
-            pool.invoke(new SortRowsRecursiveAction(this));
-        } else {
-            rowIterator = this.iterator();
-            while (rowIterator.hasNext()) {
-                row = rowIterator.next();
-                mergeSortRow(row);
-            }
 
+        switch (method) {
+            case ITERATOR:
+                rowIterator = this.iterator();
+                while (rowIterator.hasNext()) {
+                    row = rowIterator.next();
+                    sortRow(row, algorithm);
+                }
+                break;
+            case FORKJOIN:
+                ForkJoinPool pool = new ForkJoinPool(8);
+                pool.invoke(new SortRowsRecursiveAction(this, algorithm));
+                break;
+            case STREAM:
+                rows
+                        .stream()
+                        .forEach(e -> sortRow(e, algorithm));
+                break;
+            case PARALLELSTREAM:
+                rows
+                        .parallelStream()
+                        .forEach(e -> sortRow(e, algorithm));
+                break;
         }
+
         long time2 = System.nanoTime();
         System.out.println("Rows sorting execution time: " + (time2 - time1)/1000/1000 + " ms");
 
@@ -44,6 +66,17 @@ public class Matrix implements Iterable<List<Integer>> {
 
         long time3 = System.nanoTime();
         System.out.println("Sorting between rows execution time: " + (time3 - time2)/1000/1000 + " ms");
+    }
+
+    protected static void sortRow(List<Integer> row, SortingAlgorithm algorithm) {
+        switch (algorithm) {
+            case BUBBLE:
+                bubbleSortRow(row);
+                break;
+            case MERGE:
+                mergeSortRow(row);
+                break;
+        }
     }
 
     protected static void mergeSortRow(List<Integer> row) {

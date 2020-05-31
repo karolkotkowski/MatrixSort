@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5686eaee-9928-423f-a671-fb69b52e5fba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProcessingMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SortMatrixAllDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SortingAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Matrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SortMatrixDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortMatrixDemo.java" afterDir="false" />
@@ -16,11 +37,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cLyVToYEMY3ZkjzrfIvAQ2g2QY" />
@@ -56,6 +83,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.SortMatrixDemo">
+    <configuration name="SortMatrixAllDemo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortMatrixAllDemo" />
+      <module name="matrix-sort" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SortMatrixDemo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SortMatrixDemo" />
       <module name="matrix-sort" />
@@ -106,6 +140,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.SortMatrixDemo" />
+      <item itemvalue="Application.SortMatrixAllDemo" />
       <item itemvalue="JUnit.MatrixFactoryTest" />
     </list>
     <recent_temporary>
@@ -132,12 +167,31 @@
       <option name="project" value="LOCAL" />
       <updated>1590570193218</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Better structure">
+      <created>1590911201788</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590911201788</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Measure execution time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Measure execution time" />
+    <MESSAGE value="Better structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="0" key="#Project_Structure" timestamp="1590730913725">
@@ -149,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="590" y="310" key="#VisualVM_Launcher/0.0.1920.1050@0.0.1920.1050" timestamp="1590492533290" />
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590413811814">
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590928914088">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590413811814" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590928914088" />
     <state x="645" y="384" width="629" height="538" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1590490900727">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -161,10 +215,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1590488494007" />
-    <state x="689" y="314" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590413805057">
+    <state x="689" y="314" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590928909358">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="689" y="314" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590413805057" />
+    <state x="689" y="314" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590928909358" />
     <state x="683" y="213" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1590404255893">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -190,30 +244,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="704" y="222" key="Github.UntrackedFilesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590569994400" />
-    <state width="1877" height="289" key="GridCell.Tab.0.bottom" timestamp="1590910951723">
+    <state width="916" height="329" key="GridCell.Tab.0.bottom" timestamp="1590931356676">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="213" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1590439224301" />
     <state width="1493" height="72" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590764422310" />
-    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1590910951723" />
-    <state width="1877" height="289" key="GridCell.Tab.0.center" timestamp="1590910951723">
+    <state width="916" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1590931356676" />
+    <state width="916" height="329" key="GridCell.Tab.0.center" timestamp="1590931356676">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="213" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1590439224301" />
     <state width="1493" height="72" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590764422310" />
-    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1590910951723" />
-    <state width="1877" height="289" key="GridCell.Tab.0.left" timestamp="1590910951723">
+    <state width="916" height="329" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1590931356676" />
+    <state width="916" height="329" key="GridCell.Tab.0.left" timestamp="1590931356676">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="213" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1590439224291" />
     <state width="1493" height="72" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590764422310" />
-    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1590910951723" />
-    <state width="1877" height="289" key="GridCell.Tab.0.right" timestamp="1590910951723">
+    <state width="916" height="329" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1590931356676" />
+    <state width="916" height="329" key="GridCell.Tab.0.right" timestamp="1590931356676">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="213" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1590439224301" />
     <state width="1493" height="72" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590764422310" />
-    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1590910951723" />
+    <state width="916" height="329" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1590931356676" />
     <state width="1877" height="127" key="GridCell.Tab.1.bottom" timestamp="1590498831237">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -235,10 +289,10 @@
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1590325398536" />
     <state x="390" y="121" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1590493709783" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1590570196869">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1590911204098">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1590570196869" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1590911204098" />
     <state x="665" y="416" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590404671411">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
