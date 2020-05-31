@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.concurrent.ForkJoinPool;
 
-public class Matrix {
+public class Matrix implements Iterable<List<Integer>> {
     private List<List<Integer>> rows;
     private final int m;
     private final int n;
@@ -10,6 +10,7 @@ public class Matrix {
         m = rows.size();
         if (m < 1)
             throw new IllegalMatrixDimensionsException("Initializing matrix with no rows.");
+
         n = rows.get(0).size();
         if (n < 1)
             throw new IllegalMatrixDimensionsException("Initializing matrix with no columns.");
@@ -17,6 +18,7 @@ public class Matrix {
             if (rows.get(i).size() != n)
                 throw new IllegalMatrixDimensionsException("Matrix dimensions must agree.");
         }
+
         this.rows = rows;
     }
 
@@ -36,15 +38,19 @@ public class Matrix {
 
         }
         long time2 = System.nanoTime();
-        System.out.println("Execution time: " + (time2 - time1)/1000/1000 + " ms");
+        System.out.println("Rows sorting execution time: " + (time2 - time1)/1000/1000 + " ms");
+
         sortBetweenRows();
+
+        long time3 = System.nanoTime();
+        System.out.println("Sorting between rows execution time: " + (time3 - time2)/1000/1000 + " ms");
     }
 
-    private void mergeSortRow(List<Integer> row) {
+    protected static void mergeSortRow(List<Integer> row) {
         Collections.sort(row);
     }
 
-    private void bubbleSortRow(List<Integer> row) {
+    protected static void bubbleSortRow(List<Integer> row) {
         int n = row.size();
         for (int i = 0; i < n-1; i++)
             for (int j = 0; j < n-i-1; j++)
