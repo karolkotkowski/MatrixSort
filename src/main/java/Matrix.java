@@ -79,11 +79,11 @@ public class Matrix implements Iterable<List<Integer>> {
         }
     }
 
-    protected static void mergeSortRow(List<Integer> row) {
+    private static void mergeSortRow(List<Integer> row) {
         Collections.sort(row);
     }
 
-    protected static void bubbleSortRow(List<Integer> row) {
+    private static void bubbleSortRow(List<Integer> row) {
         int n = row.size();
         for (int i = 0; i < n-1; i++)
             for (int j = 0; j < n-i-1; j++)
